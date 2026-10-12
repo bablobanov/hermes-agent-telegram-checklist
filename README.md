@@ -1,5 +1,7 @@
 # hermes-telegram-checklist
 
+**English** · [简体中文](README.zh-Hans.md)
+
 **Native Telegram checklists (To-Do lists) for [Hermes Agent](https://github.com/NousResearch/hermes-agent)** - create, read, append and toggle real interactive checklist messages in chats and forum topics through a Telethon user session.
 
 [![CI](https://github.com/bablobanov/hermes-telegram-checklist/actions/workflows/ci.yml/badge.svg)](https://github.com/bablobanov/hermes-telegram-checklist/actions/workflows/ci.yml)
