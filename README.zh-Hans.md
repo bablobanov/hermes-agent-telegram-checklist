@@ -1,12 +1,12 @@
-# hermes-telegram-checklist
+# hermes-agent-telegram-checklist
 
 [English](README.md) · **简体中文**
 
-> 本文译自英文 [README.md](https://github.com/bablobanov/hermes-telegram-checklist/blob/bfa65546966471b3fbbc6967b0512069dc20d043/README.md)（提交 `bfa6554696`）。如有出入，以英文版为准；英文版更新后，本译文可能滞后。
+> 本文译自英文 [README.md](https://github.com/bablobanov/hermes-agent-telegram-checklist/blob/bfa65546966471b3fbbc6967b0512069dc20d043/README.md)（提交 `bfa6554696`）。如有出入，以英文版为准；英文版更新后，本译文可能滞后。
 
 **为 [Hermes Agent](https://github.com/NousResearch/hermes-agent) 提供 Telegram 原生清单（待办事项列表）**：通过 Telethon 用户会话，在聊天和话题中创建、读取、追加和勾选真正可交互的清单消息。
 
-[![CI](https://github.com/bablobanov/hermes-telegram-checklist/actions/workflows/ci.yml/badge.svg)](https://github.com/bablobanov/hermes-telegram-checklist/actions/workflows/ci.yml)
+[![CI](https://github.com/bablobanov/hermes-agent-telegram-checklist/actions/workflows/ci.yml/badge.svg)](https://github.com/bablobanov/hermes-agent-telegram-checklist/actions/workflows/ci.yml)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)
 ![Hermes skill](https://img.shields.io/badge/Hermes-skill-8A2BE2.svg)
@@ -188,7 +188,7 @@ $ python3 telethon_checklist.py create --from-plan plan.json   # the only write,
 用 [skills.sh](https://skills.sh) CLI 一行安装（适用于 Claude Code 及其他兼容 Agent Skills 的智能体）：
 
 ```bash
-npx skills add bablobanov/hermes-telegram-checklist
+npx skills add bablobanov/hermes-agent-telegram-checklist
 ```
 
 也可以把文件夹直接放进智能体的技能目录（对 Hermes 来说，就是类似 `skills/telegram-checklist/` 这样的文件夹，里面放 `SKILL.md` 和 `telethon_checklist.py`）。[`SKILL.md`](SKILL.md) 是面向智能体的约定：触发短语（“建一个 Telegram 清单”“把这个聊天里的任务收集成清单”“勾选第 2 项”）、两种创建模式（口述与调研）、带逐项来源证据的 plan.json 调研约定、语义查重规则、滚动重建流程，以及核验职责。脚本是强制执行层：智能体无论哪里出错，CLI 都会按失败即拒绝（fail-closed）的原则拒绝执行，并如实返回 JSON 错误。

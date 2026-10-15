@@ -2,7 +2,12 @@
 
 All notable changes to this project. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versions follow [Semantic Versioning](https://semver.org/). Each version is also a
-[GitHub Release](https://github.com/bablobanov/hermes-telegram-checklist/releases).
+[GitHub Release](https://github.com/bablobanov/hermes-agent-telegram-checklist/releases).
+
+## [Unreleased]
+
+- Repository renamed to `bablobanov/hermes-agent-telegram-checklist` to match the product name
+  Hermes Agent; GitHub redirects the old address. No code change.
 
 ## [1.1.1] - 2026-09-25
 
